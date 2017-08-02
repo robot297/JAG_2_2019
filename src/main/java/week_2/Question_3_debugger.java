@@ -2,7 +2,6 @@ package week_2;
 
 /**
  *
- * //fixme
  *
  * Add a breakpoint to the start of one of your programs. Debug it, and then use the debugger to step through your program, and inspect the value of the variables.
 

@@ -9,7 +9,7 @@ import static input.InputUtils.stringInput;
 
   !@#$%^&*()
 
-  Write a program to test if an example String contains all of theses characters or not.
+  Write a program to test if an example String contains all of these characters or not.
   Your code should NOT use 10 if statements!
 
  */

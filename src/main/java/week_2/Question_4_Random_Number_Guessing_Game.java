@@ -6,8 +6,8 @@ import static input.InputUtils.*;
 
 /**
  *
- * Your program should generate a random number between 1 and 10,
- * and challenge the user to guess the number.
+ Your program should generate a random number between 1 and 10,
+ and challenge the user to guess the number.
 
  Write a loop that asks the user to guess a number that the computer
  is thinking of. Print a success message if they guess correctly.

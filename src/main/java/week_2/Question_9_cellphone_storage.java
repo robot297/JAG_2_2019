@@ -2,7 +2,7 @@ package week_2;
 
 /**
  *
- A smart phone is running 3 apps, each of which syncs and download data from a different server.
+ A smartphone is running 3 apps, each of which syncs and download data from a different server.
 
  •	App A syncs and downloads data every hour, and downloads 0.5KB each time
  •	App B syncs and downloads daily, and downloads 2KB every time
