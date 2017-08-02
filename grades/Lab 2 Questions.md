@@ -95,10 +95,12 @@ The user should be able to enter a size, a character, and your program will use 
  
 So, if the user enters 4, and the character "%" your program will display
 
+```
  %%%%
  %%%%
  %%%%
  %%%%
+```
 
 ### Question 9
 
@@ -118,6 +120,6 @@ With all 3 apps running continuously, how long will it be before the phone runs 
 Assume the phone is running continuously and nothing else is using space on the phone.
 Assume that 1KB = 1000 bytes and 1MB = 1000,000 bytes.
 
-Hint 1: the modulus operator is helpful. An expression like  ( number % 4 == 0 ) is true if number divides evenly by 4.
-Hint 2: the answer is several thousand hours.
+Hint 1: the modulus operator is helpful. An expression like  ( number % 4 == 0 ) is true if number divides evenly by 4.  
+Hint 2: the answer is several thousand hours.  
 Hint 3: This problem is a little trickier than the other ones, but it can be done :)
