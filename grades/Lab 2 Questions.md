@@ -72,18 +72,17 @@ Your program should generate a random number between 1 and 10, and challenge the
 
  Write a program that asks the user for the weight of a parcel and displays whether it can be shipped, and what it will cost.
 
- Optional extra: the most obvious solution to this problem uses if statements for the price bands. Can you think of a different way?  Hint – loops and arrays of price and max weights for price?
+ Optional extra: the most obvious solution to this problem uses if statements for the price bands. Can you think of a different way?  Hint:  loops, and arrays of price and max weights for price?
 
 
 ### Question 7
 
-Write a program to test if a String contains all of the punctuation characters from the number keys on a standard US keyboard:
+Write a program to test if a String contains all of the 10 punctuation characters from the number keys on a standard US keyboard:
 
-  !@#$%^&*()
+ ` !@#$%^&*() `
 
 Write a program to test if an example String contains all of these characters or not.
 Your code should NOT use 10 if statements!
-
 
 
 ### Question 8
@@ -120,6 +119,6 @@ With all 3 apps running continuously, how long will it be before the phone runs 
 Assume the phone is running continuously and nothing else is using space on the phone.
 Assume that 1KB = 1000 bytes and 1MB = 1000,000 bytes.
 
-Hint 1: the modulus operator is helpful. An expression like  ( number % 4 == 0 ) is true if number divides evenly by 4.  
+Hint 1: the modulus operator is helpful. An expression like  ` ( number % 4 == 0 )  ` is true if number divides evenly by 4.  
 Hint 2: the answer is several thousand hours.  
 Hint 3: This problem is a little trickier than the other ones, but it can be done :)
