@@ -65,6 +65,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>edu.minneapolis</groupId>
+            <artifactId>input-utils</artifactId>
+            <version>[1.0.0,)</version>
+        </dependency>
+
 
     </dependencies>
     
