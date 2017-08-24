@@ -24,11 +24,12 @@ package week_2;
 public class Question_9_cellphone_storage {
 
     public static void main(String[] args) {
-        double hoursToFill = new Question_9_cellphone_storage().calculateTimeToFillPhone(5000, 3, 2.5, 3, 1000);
+        double hoursToFill = new Question_9_cellphone_storage().calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000);
         System.out.println(hoursToFill);
     }
 
-    public double calculateTimeToFillPhone(int freeSpaceKB, double appAHourlyDownloadKB, double appBDailyDownloadKB, double appCPercentDownload, double appCSizeKB) {
+    public double calculateTimeToFillPhone(int freeSpaceKB, double appAHourlyDownloadKB, double appBDailyDownloadKB,
+                                           double appCPercentDownload, double appCSizeKB) {
 
         // TODO Calculate and return the number of hours until the phone runs out of space
         // Make sure all the apps sync and download at hour = 0
