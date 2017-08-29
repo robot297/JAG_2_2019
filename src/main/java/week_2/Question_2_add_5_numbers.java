@@ -5,7 +5,7 @@ import static input.InputUtils.*;
 /**
     Write a loop that asks the user to enter 5 numbers.
     The user should enter the numbers, one by one.
-    Use the intInput("enter a number") method.
+    Use the doubleInput("enter a number") method.
     Once the user has entered all the numbers,
     calculate the total and the average value.
 */
@@ -25,7 +25,7 @@ public class Question_2_add_5_numbers {
 
     public double[] getNumbers() {
 
-        // TODO Ask user for 5 integer numbers, one by one
+        // TODO Ask user for 5 numbers, one by one
         // Calculate total and average and save in the variables below.
 
         double total = 0;  // TODO Keep the total variable. Replace 0 with your result.

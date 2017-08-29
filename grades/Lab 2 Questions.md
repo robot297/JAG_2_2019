@@ -10,7 +10,7 @@ Tip: 5050 is the right answer
     
 Write a loop that asks the user to enter 5 numbers. The user should enter the numbers, one by one.
 
-Use the intInput("enter a number") method.
+Use the doubleInput("enter a number") method.
 
 Once the user has entered all the numbers, calculate the total and the average value.
 

@@ -3,6 +3,7 @@ package week_2;
 /**
  *
  * Write a loop that adds up all of the integer numbers between 1 and 100,
+ including 1 and 100.
  and displays the answer.
 
  Tip: 5050 is the right answer
@@ -14,7 +15,7 @@ public class Question_1_add_numbers_1_to_100 {
 
         int start = 1;
         int end = 100;
-        int result = addNumbers(1, 100);
+        int result = addNumbers(start, end);
         System.out.println(String.format("The sum of the numbers %s to %s is %s", start, end, result));
 
     }
