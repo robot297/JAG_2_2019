@@ -23,7 +23,9 @@ public class Question_1_add_numbers_1_to_100 {
     public static int addNumbers(int from, int to) {
 
         // TODO write your loop here, and replace this return statement with your result.
-        // It should add up all the numbers between the from and to variables.
+        // It should add up all the numbers between the from and to variables,
+        // including the values in to and from.
+        // For example, if from = 5 and to = 7, your code should calculate 5 + 6 + 7 = 18
         return 0;
 
     }
