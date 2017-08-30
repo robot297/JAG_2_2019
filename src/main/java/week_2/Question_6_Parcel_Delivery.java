@@ -43,7 +43,7 @@ public class Question_6_Parcel_Delivery {
 
     public boolean canShip(double weight) {
         // TODO return false if parcel weighs 0 or less
-        // TODO return false if parcel weighs more than MAX_WEIGHT. Use the MAX_WEIGHT variable in your test
+        // TODO return false if parcel weighs more than MAX_WEIGHT. Use the MAX_WEIGHT variable in this code
 
         // TODO otherwise, the parcel is more than 0 and less than or equal to MAX_WEIGHT. Return true.
 

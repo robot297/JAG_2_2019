@@ -17,13 +17,13 @@ public class Question_6_Parcel_DeliveryTest {
         assertTrue(delivery.canShip(30));
 
 
-        assertFalse("-1 should not a valid weight for a parcel", delivery.canShip(-1));
-        assertFalse("0 should not a valid weight for a parcel", delivery.canShip(0));
-        assertFalse("The parcel's weight should not exceed MAX_WEIGHT", delivery.canShip(delivery.MAX_WEIGHT + 1));
+        assertFalse("-1 should not be a valid weight for a parcel", delivery.canShip(-1));
+        assertFalse("0 should not be a valid weight for a parcel", delivery.canShip(0));
+        assertFalse("The parcel's weight should not exceed MAX_WEIGHT.  Use the MAX_WEIGHT variable in your method.", delivery.canShip(delivery.MAX_WEIGHT + 1));
 
         // Checking if the code uses the MAX_WEIGHT variable
         delivery.MAX_WEIGHT = 10;
-        assertFalse("The parcel's weight should not exceed MAX_WEIGHT", delivery.canShip(delivery.MAX_WEIGHT + 5));
+        assertFalse("The parcel's weight should not exceed MAX_WEIGHT. Use the MAX_WEIGHT variable in your method.", delivery.canShip(delivery.MAX_WEIGHT + 5));
 
     }
 
