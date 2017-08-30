@@ -60,25 +60,26 @@ public class Question_4_Random_Number_Guessing_Game {
         }
 
         return guessesNeeded;
-
+    
     }
 
     public String checkGuess(int secret, int guess) {
         // TODO Return CORRECT if secret is the same as guess
         // TODO Return LOW if guess is too low
         // TODO return HIGH if guess is too high
-
+        
         return null;   //replace with your code
+        
     }
 
     public int generateSecretNumber(int min, int max) {
-        // TODO generate a random number between min and max.
+        // TODO generate a random number between min and max, inclusive of min and max
         // The smallest value possible should be min
         // The largest value possible should be max
         // Use the global Random rnd to generate the number
         
         return 0;  //replace with your code
+        
     }
-
-
+    
 }

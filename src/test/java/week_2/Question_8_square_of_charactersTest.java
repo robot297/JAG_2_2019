@@ -33,7 +33,7 @@ public class Question_8_square_of_charactersTest extends TestCase {
         String expectedOut = "***\n***\n***";
         // Assert that  "%%%%\n%%%%\n%%%%\n%%%%" is printed
 
-        String actualOut = out.toString();
+        String actualOut = out.toString().replace("\r", "");
 
         System.out.println(expectedOut);
         System.out.println(actualOut);
@@ -47,14 +47,14 @@ public class Question_8_square_of_charactersTest extends TestCase {
 
         mockStatic(InputUtils.class);
         expect(InputUtils.stringInput(anyString()))
-                .andReturn("")        // Too short
-                .andReturn("123456")  // Too long
+                .andReturn("")        // Enter something that's too short
+                .andReturn("123456")  // Enter something that's too long
                 .andReturn("Q");      // Exactly 1 character
         replay(InputUtils.class);
 
         Question_8_square_of_characters squarer = new Question_8_square_of_characters();
 
-        assertEquals("getCharacter should only accept Strings of one character", "Q", squarer.getCharacter());
+        assertEquals("getCharacter should only accept Strings of exactly one character. Do not accept empty Strings as input.", "Q", squarer.getCharacter());
 
         // Valid input
         reset(InputUtils.class);
@@ -64,7 +64,7 @@ public class Question_8_square_of_charactersTest extends TestCase {
 
         squarer = new Question_8_square_of_characters();
 
-        assertEquals("getCharacter should only accept Strings of one character", "Q", squarer.getCharacter());
+        assertEquals("getCharacter should only accept Strings of exactly one character.  Do not accept empty Strings as input.", "Q", squarer.getCharacter());
 
 
     }
