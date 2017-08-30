@@ -74,12 +74,12 @@ public class Question_4_Random_Number_Guessing_GameTest {
 
         // Mock random number
 
-        int max = 10, expect = 6;
+        int max = 10, min=1, expect = 6;
 
         q4.rnd = createNiceMock(Random.class);
 
         // Any time this method is called, return the same value
-        expect( q4.rnd.nextInt(max) ).andReturn(expect).anyTimes();
+        expect( q4.rnd.nextInt(max-min) ).andReturn(expect).anyTimes();
 
         EasyMock.replay(q4.rnd);
 
