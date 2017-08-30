@@ -55,7 +55,7 @@ public class Question_5_Average_Utility_BillTest extends TestCase {
         Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
 
         double[] exampleBills = {4.1, 5.1, 6.1};
-        assertEquals("Check your addition", 15.3,  q5.averageBillAmount(exampleBills), delta);
+        assertEquals("Check your math in the addition", 15.3/exampleBills.length,  q5.averageBillAmount(exampleBills), delta);
 
     }
 
