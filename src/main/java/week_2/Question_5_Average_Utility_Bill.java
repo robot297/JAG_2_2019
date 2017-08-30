@@ -49,7 +49,9 @@ public class Question_5_Average_Utility_Bill {
     public double[] getYearBills() {
 
         // TODO ask user for bill amount for January, then February...
-        // Store values in a double array. Return this array.
+        // Create a new double array.
+        // Store values the user enters in this array.
+        // Return this array.
 
         return null;  // replace with your code
 

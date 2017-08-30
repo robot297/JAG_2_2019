@@ -39,24 +39,28 @@ public class Question_4_Random_Number_Guessing_GameTest {
 
         Question_4_Random_Number_Guessing_Game q4 = new Question_4_Random_Number_Guessing_Game();
 
-        int min = 1, max = 10, expect = 6;
+        int min = 1, max = 10;
+        int nextIntVal = 6;   //This is the value that rnd.nextInt will return
 
+        // For min = 1, max = 10, force the rnd generator to generate 6 and then function should return 7
+        
         q4.rnd = createNiceMock(Random.class);
-        expect(q4.rnd.nextInt(max)).andReturn(expect);
+        expect(q4.rnd.nextInt(max-min)).andReturn(nextIntVal);
         EasyMock.replay(q4.rnd);
 
-        assertEquals(expect + min, q4.generateSecretNumber(min, max));
+        assertEquals(nextIntVal + min, q4.generateSecretNumber(min, max));
 
 
         // Verify method is using the arguments correctly
 
-        min = 20; max = 44; expect = 32;
+        min = 20; max = 44;
+        nextIntVal = 32;
 
         q4.rnd = createNiceMock(Random.class);
-        expect(q4.rnd.nextInt(max)).andReturn(expect);
+        expect(q4.rnd.nextInt(max-min)).andReturn(nextIntVal);
         EasyMock.replay(q4.rnd);
 
-        assertEquals("Ensure you use the min and max arguments", expect + min, q4.generateSecretNumber(min, max));
+        assertEquals("Ensure you use the min and max arguments", nextIntVal + min, q4.generateSecretNumber(min, max));
 
     }
 
@@ -65,7 +69,7 @@ public class Question_4_Random_Number_Guessing_GameTest {
 
         System.out.println("Starting testGuessesNeeded. If this method never finishes, " +
                 "check your code. Make sure your loop is working correctly.");
-
+        
         Question_4_Random_Number_Guessing_Game q4 = new Question_4_Random_Number_Guessing_Game();
 
         // Mock random number
