@@ -78,8 +78,10 @@ public class Question_5_Average_Utility_BillTest extends TestCase {
         String output = out.toString();
 
         // Matching newlines with regex is a bit of a hassle. Get rid of them
-        output = output.replace("\n", " ");
-
+        output = output.replace("\n", " ");    // Mac/Linux have \n for a newline char
+        output = output.replace("\r", " ");   // For Windows PCs, which use \r\n for a newline.
+    
+    
         String pattern = ".*jan.*2.*feb.*3.*mar.*4.*";
 
         assertTrue("If you are sure your table is right but this method fails, please tell Clara - the test might not be reading your table correctly.", Pattern.matches(pattern, output));
