@@ -52,7 +52,7 @@ public class Question_4_Random_Number_Guessing_GameTest {
         EasyMock.replay(q4.rnd);
 
         int expectedResult = nextIntVal + min;
-        assertEquals(expectedResult, q4.generateSecretNumber(min, max));
+        assertEquals("Ensure you use the min and max arguments", expectedResult, q4.generateSecretNumber(min, max));
         
         // Verify method is using the arguments correctly
 

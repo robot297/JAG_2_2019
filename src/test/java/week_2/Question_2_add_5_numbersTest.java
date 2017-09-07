@@ -9,6 +9,8 @@ import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.util.Arrays;
+
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertArrayEquals;
 import static org.powermock.api.easymock.PowerMock.*;
@@ -44,7 +46,9 @@ public class Question_2_add_5_numbersTest extends TestCase {
         double[] result = q2.getNumbers();
 
         // Assert that it returns the expected value
-        assertArrayEquals(result, expectedResult, delta);
+        assertArrayEquals("With the numbers " + Arrays.toString(exampleInput) +
+                " the total and average should be " + Arrays.toString(expectedResult) +
+                "\nYour code returned " + Arrays.toString(result), result, expectedResult, delta);
 
 
     }
