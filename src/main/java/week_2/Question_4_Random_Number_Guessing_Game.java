@@ -25,9 +25,9 @@ public class Question_4_Random_Number_Guessing_Game {
 
     Random rnd = new Random();
 
-    final String CORRECT = "Correct!!";
-    final String LOW = "Too low";
-    final String HIGH = "Too high";
+    String CORRECT = "Correct!!";
+    String LOW = "Too low";
+    String HIGH = "Too high";
 
     public static void main(String[] args) {
 

@@ -22,13 +22,18 @@ public class Question_4_Random_Number_Guessing_GameTest {
     
     @Test
     public void testCorrect() throws Exception {
-
+        
         Question_4_Random_Number_Guessing_Game q4 = new Question_4_Random_Number_Guessing_Game();
-        assertEquals(q4.CORRECT, q4.checkGuess(3, 3));
-        assertEquals(q4.CORRECT, q4.checkGuess(10, 10));
+        
+        q4.CORRECT = "c-o-r-r-e-c-t";
+        q4.LOW = "l-o-w";
+        q4.HIGH = "h-i-g-h";   // Replace the CORRECT, HIGH, LOW to verify that these variables are being used
+        
+        assertEquals("Return the CORRECT String if secret is the same as guess", q4.CORRECT, q4.checkGuess(3, 3));
+        assertEquals("Return the CORRECT String if secret is the same as guess", q4.CORRECT, q4.checkGuess(10, 10));
 
-        assertEquals(q4.HIGH, q4.checkGuess(4, 10));
-        assertEquals(q4.LOW, q4.checkGuess(10, 4));
+        assertEquals("Return the HIGH String if secret is higher than guess", q4.HIGH, q4.checkGuess(4, 10));
+        assertEquals("Return the LOW String if secret is lower than guess", q4.LOW, q4.checkGuess(10, 4));
 
     }
 
@@ -99,7 +104,7 @@ public class Question_4_Random_Number_Guessing_GameTest {
 
         int guesses = q4.play();
 
-        assertEquals(3, guesses);
+        assertEquals("If the user is wrong, wrong, then right, they needed 3 guesses.", 3, guesses);
 
 
         // User is correct the first guess.
@@ -110,7 +115,7 @@ public class Question_4_Random_Number_Guessing_GameTest {
 
         guesses = q4.play();
 
-        assertEquals(1, guesses);
+        assertEquals("If the user is correct on the first guess, they needed 1 guess", 1, guesses);
 
 
     }
