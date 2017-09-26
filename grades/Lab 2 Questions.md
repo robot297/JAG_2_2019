@@ -77,12 +77,19 @@ Your program should generate a random number between 1 and 10, and challenge the
 
 ### Question 7
 
-Write a program to test if a String contains all of the 10 punctuation characters from the number keys on a standard US keyboard:
+  Write a program to test if a String contains all of the
+  punctuation characters from the number keys on a standard US keyboard:
 
- ` !@#$%^&*() `
+  !@#$%^&*()
+ 
+ So, the String "abc!@#$%^&*()def" contains all the characters.
+ The String ")(*&^%$#@!" contains all the characters.
+ The String "a)(b*&c^%d$#e@!" contains all the characters.
+ 
+ The String "abc$*^def" does not.
 
-Write a program to test if an example String contains all of these characters or not.
-Your code should NOT use 10 if statements!
+  Write a program to test if an example String contains all of these characters or not.
+  Your code should NOT use 10 if statements!
 
 
 ### Question 8
