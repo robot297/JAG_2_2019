@@ -1,7 +1,7 @@
 package week_2;
 
 import junit.framework.TestCase;
-import static week_2.Question_1_add_numbers_1_to_100.*;
+import static week_2.Question_1_Add_Numbers_1_To_100.*;
 
 public class Question_1_add_numbers_1_to_100Test extends TestCase {
 

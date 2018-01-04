@@ -5,10 +5,10 @@ import org.junit.Test;
 
 public class Question_3_debuggerTest extends TestCase {
 
-    Question_3_debugger q11;
+    Question_3_Debugger q11;
 
     public void setUp() {
-        q11 = new Question_3_debugger();
+        q11 = new Question_3_Debugger();
     }
     
     @Test

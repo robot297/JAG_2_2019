@@ -24,11 +24,11 @@ package week_2;
  Hint 3: This problem is a little trickier than the other ones, but it can be done :)
 
  */
-public class Question_9_cellphone_storage {
+public class Question_8_Cellphone_Storage {
 
     public static void main(String[] args) {
         
-        int hoursToFill = new Question_9_cellphone_storage().calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000);
+        int hoursToFill = new Question_8_Cellphone_Storage().calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000);
         System.out.println(hoursToFill);
     }
 

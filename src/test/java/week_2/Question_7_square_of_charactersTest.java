@@ -16,11 +16,11 @@ import static org.powermock.api.easymock.PowerMock.*;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-public class Question_8_square_of_charactersTest extends TestCase {
+public class Question_7_square_of_charactersTest extends TestCase {
     
     public void testPrintSquare() throws Exception {
 
-        Question_8_square_of_characters squarer = new Question_8_square_of_characters();
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         int size = 3;
         String ch = "*";
@@ -52,7 +52,7 @@ public class Question_8_square_of_charactersTest extends TestCase {
                 .andReturn("Q");      // Exactly 1 character
         replay(InputUtils.class);
 
-        Question_8_square_of_characters squarer = new Question_8_square_of_characters();
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         assertEquals("getCharacter should only accept Strings of exactly one character. Do not accept empty Strings as input.", "Q", squarer.getCharacter());
 
@@ -62,7 +62,7 @@ public class Question_8_square_of_charactersTest extends TestCase {
                 .andReturn("Q");      // Exactly 1 character
         replay(InputUtils.class);
 
-        squarer = new Question_8_square_of_characters();
+        squarer = new Question_7_Square_Of_Characters();
 
         assertEquals("getCharacter should only accept Strings of exactly one character.  Do not accept empty Strings as input.", "Q", squarer.getCharacter());
 
@@ -79,7 +79,7 @@ public class Question_8_square_of_charactersTest extends TestCase {
                 .andReturn(4);      // 4 is good
         replay(InputUtils.class);
 
-        Question_8_square_of_characters squarer = new Question_8_square_of_characters();
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         assertEquals("getSquareSize should not accept 0 or negative numbers", 4, squarer.getSquareSize());
 

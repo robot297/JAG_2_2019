@@ -18,7 +18,7 @@ import static org.powermock.api.easymock.PowerMock.*;
 
 
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({InputUtils.class, Question_2_add_5_numbers.class})
+@PrepareForTest({InputUtils.class, Question_2_Add_5_Numbers.class})
 
 public class Question_2_add_5_numbersTest extends TestCase {
     
@@ -42,7 +42,7 @@ public class Question_2_add_5_numbersTest extends TestCase {
 
 
         // Call our method
-        Question_2_add_5_numbers q2 = new Question_2_add_5_numbers();
+        Question_2_Add_5_Numbers q2 = new Question_2_Add_5_Numbers();
         double[] result = q2.getNumbers();
 
         // Assert that it returns the expected value

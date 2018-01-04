@@ -18,7 +18,7 @@ package week_2;
  What does clicking on the triangle next to a variable on the variables pane do? (Such as the arrow next to names in the screenshot below)
 
  */
-public class Question_3_debugger {
+public class Question_3_Debugger {
 
     // TODO In the methods that follow, make sure you can do the debugging tasks.
     // TODO Write a comment answering the question

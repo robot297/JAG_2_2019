@@ -19,13 +19,13 @@ import static input.InputUtils.stringInput;
   Your code should NOT use 10 if statements!
 
  */
-public class Question_7_String_Contains_Chars {
+public class Question_6_String_Contains_Chars {
 
     String punctuation = "!@#$%^&*()";
 
     public static void main(String[] args) {
     
-        Question_7_String_Contains_Chars q7 = new Question_7_String_Contains_Chars();
+        Question_6_String_Contains_Chars q7 = new Question_6_String_Contains_Chars();
 
         String testString = stringInput("Enter the string to test: ");
 

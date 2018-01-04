@@ -1,7 +1,5 @@
 package week_2;
 
-import static input.InputUtils.*;
-
 /**
     Write a loop that asks the user to enter 5 numbers.
     The user should enter the numbers, one by one.
@@ -11,12 +9,12 @@ import static input.InputUtils.*;
 */
 
 
-public class Question_2_add_5_numbers {
+public class Question_2_Add_5_Numbers {
 
     public static void main(String[] args) {
 
         // Don't modify these lines
-        double[] results = new Question_2_add_5_numbers().getNumbers();
+        double[] results = new Question_2_Add_5_Numbers().getNumbers();
         System.out.println("The total is " + results[0]);
         System.out.println("The average is " + results[1]);
 

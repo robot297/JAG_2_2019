@@ -1,6 +1,7 @@
 package week_2;
 
 import static input.InputUtils.intInput;
+import static input.InputUtils.positiveIntInput;
 import static input.InputUtils.stringInput;
 
 /**
@@ -22,14 +23,14 @@ import static input.InputUtils.stringInput;
  */
 
 
-public class Question_8_square_of_characters {
+public class Question_7_Square_Of_Characters {
 
     int MIN_SIZE = 1;
     int MAX_SIZE = 100;
 
     public static void main(String[] args) {
 
-        Question_8_square_of_characters squarer = new Question_8_square_of_characters();
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         int size = squarer.getSquareSize();
         String character = squarer.getCharacter();
@@ -47,7 +48,7 @@ public class Question_8_square_of_characters {
 
         // Loop while user-entered size is less than the minimum, or larger than the maximum
         while (size < MIN_SIZE || size > MAX_SIZE) {
-            size = intInput("Enter a number between 1 and 100 for the square size");
+            size = positiveIntInput("Enter a number between 1 and 100 for the square size");
         }
 
         return size;

@@ -2,11 +2,11 @@ package week_2;
 
 import junit.framework.TestCase;
 
-public class Question_9_cellphone_storageTest extends TestCase {
+public class Question_8_cellphone_storageTest extends TestCase {
 
     public void testCalculateTimeToFillPhone() throws Exception {
 
-        Question_9_cellphone_storage q10 = new Question_9_cellphone_storage();
+        Question_8_Cellphone_Storage q10 = new Question_8_Cellphone_Storage();
         // 696, plus or minus a handful of hours. You might have the right logic but count the hours slightly differently.
         assertEquals("The answer should be about 696. If you are sure your logic is right, \nplease tell Clara that this test is failing.. ", 696, q10.calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000), 30);
         

@@ -9,7 +9,7 @@ package week_2;
  Tip: 5050 is the right answer
 
  */
-public class Question_1_add_numbers_1_to_100 {
+public class Question_1_Add_Numbers_1_To_100 {
 
     public static void main(String[] args) {
 
