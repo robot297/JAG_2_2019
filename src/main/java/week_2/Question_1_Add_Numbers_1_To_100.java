@@ -12,7 +12,9 @@ package week_2;
 public class Question_1_Add_Numbers_1_To_100 {
 
     public static void main(String[] args) {
-
+    
+        // You don't need to modify the main method.
+    
         int start = 1;
         int end = 100;
         int result = addNumbers(start, end);
@@ -24,8 +26,14 @@ public class Question_1_Add_Numbers_1_To_100 {
 
         // TODO write your loop here, and replace this return statement with your result.
         // It should add up all the numbers between the from and to variables,
-        // including the values in to and from.
+        // including the values in the to and from variables
         // For example, if from = 5 and to = 7, your code should calculate 5 + 6 + 7 = 18
+        
+        // If the from number is larger than the to value, add up the numbers between them.
+        // So if from = 7 and to = 5, then calculate 5 + 6 + 7 = 18 as before.
+        
+        // If the from and to numbers are the same, then return the from number.
+        
         return 0;
 
     }

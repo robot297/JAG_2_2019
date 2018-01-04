@@ -3,7 +3,7 @@ package week_2;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-public class Question_3_debuggerTest extends TestCase {
+public class Question_3_DebuggerTest extends TestCase {
 
     Question_3_Debugger q11;
 

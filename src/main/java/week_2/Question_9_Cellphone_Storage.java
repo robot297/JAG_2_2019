@@ -2,7 +2,7 @@ package week_2;
 
 /**
  *
- A smartphone is running 3 apps, each of which syncs and download data from a different server.
+ A cellphone is running 3 apps, each of which syncs and download data from a different server.
 
  •	App A syncs and downloads data every hour, and downloads 0.5KB each time
  •	App B syncs and downloads daily, and downloads 2KB every time
@@ -24,15 +24,17 @@ package week_2;
  Hint 3: This problem is a little trickier than the other ones, but it can be done :)
 
  */
-public class Question_8_Cellphone_Storage {
+public class Question_9_Cellphone_Storage {
 
     public static void main(String[] args) {
-        
-        int hoursToFill = new Question_8_Cellphone_Storage().calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000);
+    
+        // You don't need to modify the main method.
+    
+        int hoursToFill = calculateTimeToFillPhone(5000, 0.5, 2, 1, 1000);
         System.out.println(hoursToFill);
     }
 
-    public int calculateTimeToFillPhone(double freeSpaceKB, double appAHourlyDownloadKB, double appBDailyDownloadKB,
+    public static int calculateTimeToFillPhone(double freeSpaceKB, double appAHourlyDownloadKB, double appBDailyDownloadKB,
                                            double appCPercentDownload, double appCSizeKB) {
 
         // TODO Calculate and return the number of hours until the phone runs out of space

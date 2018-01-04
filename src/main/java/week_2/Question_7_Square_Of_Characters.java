@@ -25,23 +25,26 @@ import static input.InputUtils.stringInput;
 
 public class Question_7_Square_Of_Characters {
 
-    int MIN_SIZE = 1;
-    int MAX_SIZE = 100;
+    // You don't need to modify these variables
+    static int MIN_SIZE = 1;
+    static int MAX_SIZE = 100;
 
     public static void main(String[] args) {
-
+    
+        // You don't need to modify the main method.
+        
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
-
         int size = squarer.getSquareSize();
         String character = squarer.getCharacter();
-
-        squarer.printSquare(size, character);
+        printSquare(size, character);
 
     }
 
     /* Get a positive number for the square size. You don't need to modify this method. */
     public int getSquareSize() {
-
+    
+        // You don't need to modify this method.
+    
         // Input validation. The square size must be positive.
 
         int size = -1;
@@ -66,7 +69,7 @@ public class Question_7_Square_Of_Characters {
 
 
 
-    public void printSquare(int size, String character) {
+    public static void printSquare(int size, String character) {
 
         // TODO print a square of characters, of the given size.
         

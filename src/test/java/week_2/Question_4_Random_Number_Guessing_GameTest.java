@@ -20,7 +20,7 @@ import static org.powermock.api.easymock.PowerMock.mockStatic;
 @PrepareForTest({InputUtils.class, Random.class})
 public class Question_4_Random_Number_Guessing_GameTest {
     
-    @Test
+    @Test(timeout=3000)
     public void testCorrect() throws Exception {
         
         Question_4_Random_Number_Guessing_Game q4 = new Question_4_Random_Number_Guessing_Game();
@@ -36,8 +36,8 @@ public class Question_4_Random_Number_Guessing_GameTest {
         assertEquals("Return the LOW String if secret is lower than guess", q4.LOW, q4.checkGuess(10, 4));
 
     }
-
-    @Test
+    
+    @Test(timeout=3000)
     public void testGenerateSecretNumber() throws Exception {
 
         // Mock the random number generator and verify the
@@ -71,8 +71,8 @@ public class Question_4_Random_Number_Guessing_GameTest {
         assertEquals("Ensure you use the min and max arguments", nextIntVal + min, q4.generateSecretNumber(min, max));
 
     }
-
-    @Test
+    
+    @Test(timeout=3000)
     public void testGuessesNeeded() {
 
         System.out.println("Starting testGuessesNeeded. If this method never finishes, " +

@@ -21,6 +21,7 @@ import static input.InputUtils.*;
  get the right number.
 
  */
+
 public class Question_4_Random_Number_Guessing_Game {
 
     Random rnd = new Random();
@@ -55,7 +56,7 @@ public class Question_4_Random_Number_Guessing_Game {
             // TODO print the result - too high, too low, or correct.
 
             // TODO Check if result is correct. If so, end the loop.
-            break;  // TODO remove and replace with a test
+            break;  // TODO remove and replace with your check
 
         }
 
@@ -64,6 +65,7 @@ public class Question_4_Random_Number_Guessing_Game {
     }
 
     public String checkGuess(int secret, int guess) {
+        
         // TODO Return CORRECT if secret is the same as guess
         // TODO Return LOW if guess is too low
         // TODO return HIGH if guess is too high
@@ -73,6 +75,7 @@ public class Question_4_Random_Number_Guessing_Game {
     }
 
     public int generateSecretNumber(int min, int max) {
+        
         // TODO generate a random number between min and max, inclusive of min and max
         // The smallest value possible should be min
         // The largest value possible should be max

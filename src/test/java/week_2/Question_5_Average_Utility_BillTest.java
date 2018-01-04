@@ -18,17 +18,20 @@ import java.util.regex.Pattern;
 import static org.easymock.EasyMock.anyString;
 import static org.easymock.EasyMock.expect;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.powermock.api.easymock.PowerMock.mockStatic;
 import static org.powermock.api.easymock.PowerMock.replay;
 
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-public class Question_5_Average_Utility_BillTest extends TestCase {
+public class Question_5_Average_Utility_BillTest {
 
     double delta = 0.00001;
-
-    @Test
+    
+    
+    @Test(timeout=3000)
     public void testGetYearBills() throws Exception {
 
         double[] exampleBills = {3.0, 4.0, 5.0, 6.0, 1.0, 2.0, 3.0, 6.0, 7.0, 3.0, 6.0, 7.0};
@@ -48,8 +51,9 @@ public class Question_5_Average_Utility_BillTest extends TestCase {
         assertArrayEquals(exampleBills, bills, delta);
 
     }
-
-
+    
+    
+    @Test(timeout=3000)
     public void testAverageBillAmount() throws Exception {
 
         Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
@@ -59,8 +63,8 @@ public class Question_5_Average_Utility_BillTest extends TestCase {
         assertEquals("Check your math in the addition and average calculation", sum/exampleBills.length,  q5.averageBillAmount(exampleBills), delta);
 
     }
-
-
+    
+    @Test(timeout=3000)
     public void testPrintBillTable() throws Exception {
 
         // Replace standard out to be able to test what System.out.println is called with

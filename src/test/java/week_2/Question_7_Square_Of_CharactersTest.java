@@ -1,7 +1,7 @@
 package week_2;
 
 import input.InputUtils;
-import junit.framework.TestCase;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
@@ -9,15 +9,19 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import static junit.framework.TestCase.assertEquals;
 import static org.easymock.EasyMock.anyString;
 import static org.easymock.EasyMock.expect;
+import static org.junit.Assert.assertTrue;
 import static org.powermock.api.easymock.PowerMock.*;
 
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-public class Question_7_square_of_charactersTest extends TestCase {
+public class Question_7_Square_Of_CharactersTest {
     
+    
+    @Test(timeout=3000)
     public void testPrintSquare() throws Exception {
 
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
@@ -41,8 +45,9 @@ public class Question_7_square_of_charactersTest extends TestCase {
         assertTrue("Your program printed \n " + actualOut + " which doesn't seem to be a square(?)",  actualOut.contains(expectedOut));
 
     }
-
-
+    
+    
+    @Test(timeout=3000)
     public void testGetCharacter() {
 
         mockStatic(InputUtils.class);
@@ -68,7 +73,8 @@ public class Question_7_square_of_charactersTest extends TestCase {
 
 
     }
-
+    
+    @Test(timeout=3000)
     public void testGetSquareSize() {
 
         mockStatic(InputUtils.class);

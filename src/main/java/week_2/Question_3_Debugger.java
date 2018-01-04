@@ -37,7 +37,9 @@ public class Question_3_Debugger {
     }
 
     public static double halfThisNumber(int number) {
-        return number / 2.0;
+        // TODO in the debugger, watch the new variable being created
+        double half = number / 2.0;
+        return half;
     }
 
 

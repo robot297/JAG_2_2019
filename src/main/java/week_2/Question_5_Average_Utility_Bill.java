@@ -29,6 +29,8 @@ public class Question_5_Average_Utility_Bill {
 
     public static void main(String[] args) {
 
+        // You don't need to modify this method.
+        
         Question_5_Average_Utility_Bill billsAverage = new Question_5_Average_Utility_Bill();
         billsAverage.billAverages();
 
@@ -36,6 +38,8 @@ public class Question_5_Average_Utility_Bill {
 
     private void billAverages() {
 
+        // You don't need to modify this method
+        
         double[] bills = getYearBills();
 
         double average = averageBillAmount(bills);

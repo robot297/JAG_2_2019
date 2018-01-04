@@ -19,23 +19,23 @@ import static input.InputUtils.stringInput;
   Your code should NOT use 10 if statements!
 
  */
-public class Question_6_String_Contains_Chars {
+public class Question_8_String_Contains_Chars {
 
     String punctuation = "!@#$%^&*()";
 
     public static void main(String[] args) {
     
-        Question_6_String_Contains_Chars q7 = new Question_6_String_Contains_Chars();
-
+        // You don't need to modify the main method.
+        
         String testString = stringInput("Enter the string to test: ");
 
-        boolean containsChars = q7.testContainsChars(testString);
+        boolean containsChars = testContainsChars(testString);
 
         System.out.println("Does the string contain all the characters? " + containsChars);
 
     }
 
-    public boolean testContainsChars(String testString) {
+    public static boolean testContainsChars(String testString) {
 
         // TODO check if testString contains all the punctuation characters being tested.
         return false;

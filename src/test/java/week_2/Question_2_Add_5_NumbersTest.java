@@ -14,15 +14,14 @@ import java.util.Arrays;
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertArrayEquals;
 import static org.powermock.api.easymock.PowerMock.*;
-//import static week_2.Question_2_add_5_numbers.getNumbers;
 
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({InputUtils.class, Question_2_Add_5_Numbers.class})
 
-public class Question_2_add_5_numbersTest extends TestCase {
+public class Question_2_Add_5_NumbersTest extends TestCase {
     
-    @Test
+    @Test(timeout=3000)
     public void testGetNumbers() throws Exception {
 
         // 5 example numbers.

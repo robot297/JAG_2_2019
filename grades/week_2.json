@@ -2,20 +2,20 @@
   "questions" : [
     {
       "question" : 1,
-      "java_file": "Question_1_add_numbers_1_to_100",
-      "test_file": "Question_1_add_numbers_1_to_100Test",
+      "java_file": "Question_1_Add_Numbers_1_To_100",
+      "test_file": "Question_1_Add_Numbers_1_To_100Test",
       "points": 2
     },
     {
       "question" : 2,
-      "java_file": "Question_2_add_5_numbers",
-      "test_file": "Question_2_add_5_numbersTest",
+      "java_file": "Question_2_Add_5_Numbers",
+      "test_file": "Question_2_Add_5_NumbersTest",
       "points": 2
     },
     {
       "question" : 3,
-      "java_file": "Question_3_debugger",
-      "test_file": "Question_3_debuggerTest",
+      "java_file": "Question_3_Debugger",
+      "test_file": "Question_3_DebuggerTest",
       "points": 2
     },
     {
@@ -32,26 +32,26 @@
     },
     {
       "question" : 6,
-      "java_file": "Question_6_Parcel_Delivery",
-      "test_file": "Question_6_Parcel_DeliveryTest",
+      "java_file": "Question_6_Many_Copy_String",
+      "test_file": "Question_6_Many_Copy_StringTest",
       "points": 2
     },
     {
       "question" : 7,
-      "java_file": "Question_7_String_Contains_Chars",
-      "test_file": "Question_7_String_Contains_Chars_Test",
+      "java_file": "Question_7_Square_Of_Characters",
+      "test_file": "Question_7_Square_Of_CharactersTest",
       "points": 2
     },
     {
       "question" : 8,
-      "java_file": "Question_8_square_of_characters",
-      "test_file": "Question_8_square_of_charactersTest",
+      "java_file": "Question_8_String_Contains_Chars",
+      "test_file": "Question_8_String_Contains_Chars_Test",
       "points": 2
     },
     {
       "question" : 9,
-      "java_file": "Question_9_cellphone_storage",
-      "test_file": "Question_9_cellphone_storageTest",
+      "java_file": "Question_9_Cellphone_Storage",
+      "test_file": "Question_9_Cellphone_StorageTest",
       "points": 3
     }
 
