@@ -19,6 +19,8 @@ import static input.InputUtils.*;
 
  Once the user guesses correctly, tell the user how many guesses they needed to
  get the right number.
+ 
+ Read the instructions in the TODO messages.
 
  */
 
@@ -34,7 +36,9 @@ public class Question_4_Random_Number_Guessing_Game {
 
         int guessesNeeded = new Question_4_Random_Number_Guessing_Game().play();
 
-        // TODO print the number of guesses needed.
+        // printf is a shortcut for System.out.println(String.format("You guessed the number in %d guesses\n", guessesNeeded));
+        
+        System.out.printf("You guessed the number in %d guesses\n", guessesNeeded);
 
     }
 
@@ -49,13 +53,18 @@ public class Question_4_Random_Number_Guessing_Game {
             // TODO ask user for their guess
             int guess = 0;   // Replace with your code
 
+            
             // TODO increase guessesNeeded
 
+            
             String result = checkGuess(secret, guess);
 
+            
             // TODO print the result - too high, too low, or correct.
-
+            
+            
             // TODO Check if result is correct. If so, end the loop.
+            // Use the global CORRECT variable in your if statement
             break;  // TODO remove and replace with your check
 
         }
@@ -66,9 +75,9 @@ public class Question_4_Random_Number_Guessing_Game {
 
     public String checkGuess(int secret, int guess) {
         
-        // TODO Return CORRECT if secret is the same as guess
-        // TODO Return LOW if guess is too low
-        // TODO return HIGH if guess is too high
+        // TODO Return CORRECT if secret is the same as guess - use the global CORRECT variable
+        // TODO Return LOW if guess is too low - use the global LOW variable
+        // TODO return HIGH if guess is too high- use the global HIGH variable
         
         return null;   //replace with your code
         
@@ -79,7 +88,8 @@ public class Question_4_Random_Number_Guessing_Game {
         // TODO generate a random number between min and max, inclusive of min and max
         // The smallest value possible should be min
         // The largest value possible should be max
-        // Use the global Random rnd to generate the number
+        // Example: if min = 4 and max = 7, the random number should be a random selected value from 4, 5, 6, 7.
+        // Use the global Random rnd variable (declared at the top of the program) to generate the number. Don't create another Random.
         
         return 0;  //replace with your code
         

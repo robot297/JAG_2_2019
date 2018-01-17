@@ -48,7 +48,7 @@ public class Question_5_Average_Utility_BillTest {
 
         double[] bills = q5.getYearBills();
 
-        assertArrayEquals(exampleBills, bills, delta);
+        assertArrayEquals("Make you ask the user for 12 bill amounts, and save each value in a 12-element array. Return this array.", exampleBills, bills, delta);
 
     }
     
@@ -60,14 +60,14 @@ public class Question_5_Average_Utility_BillTest {
 
         double[] exampleBills = {4.1, 5.1, 6.1};
         double sum = 4.1 + 5.1 + 6.1;
-        assertEquals("Check your math in the addition and average calculation", sum/exampleBills.length,  q5.averageBillAmount(exampleBills), delta);
+        assertEquals("Check your math in the addition and average calculation. This method should work with any length array.", sum/exampleBills.length,  q5.averageBillAmount(exampleBills), delta);
 
     }
     
     @Test(timeout=3000)
     public void testPrintBillTable() throws Exception {
 
-        // Replace standard out to be able to test what System.out.println is called with
+        // Replace standard out to be able to test what System.out.println/printf is called with
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
@@ -82,11 +82,10 @@ public class Question_5_Average_Utility_BillTest {
 
         String output = out.toString();
 
-        // Matching newlines with regex is a bit of a hassle. Get rid of them
+        // Matching newlines with regex is a bit of a hassle. Get rid of the newline chars
         output = output.replace("\n", " ");    // Mac/Linux have \n for a newline char
         output = output.replace("\r", " ");   // For Windows PCs, which use \r\n for a newline.
-    
-    
+        
         String pattern = ".*jan.*2.*feb.*3.*mar.*4.*";
 
         assertTrue("If you are sure your table is right but this method fails, please tell Clara - the test might not be reading your table correctly.", Pattern.matches(pattern, output));

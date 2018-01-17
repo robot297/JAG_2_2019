@@ -5,16 +5,26 @@
 
 Write a loop that adds up all of the integer numbers between 1 and 100, and displays the answer.
 
+Your loop should be in the addNumbers method. Use the `from` and `to` parameters in your code. 
+ 
 Tip: 5050 is the right answer.
 
 Your method should work for any to and from numbers, not just 1 and 100. Make sure you use the method's parameters.
 
-If the method is called with 100 and 1 as the from and to values, the method should still add up all the numbers between 1 and 100 and return 5050.
+If the method is called with a smaller `to` value than the `from` value, return the `from` value. For example, the following method call should return 100.
 
-If the method is called with the same from and to values, return the from value. 
+`addNumbers(100, 1)` 
+
+
+If the method is called with the same `from` and `to` values, return the `from` value. So the following method call should return 100. 
+
+`addNumbers(100, 100)`
+
 
 ### Question 2 Add 5 numbers
     
+Write your code in the `getNumbersAndAnalyze` method.
+
 Write a loop that asks the user to enter 5 numbers. The user should enter the numbers, one by one.
 
 Use the `doubleInput("enter a number")` method.
@@ -63,7 +73,7 @@ Then, add up all of the bills and figure out, and display the average.
  
 Also, display the user's data in a table of months and bill amount, so they can review it for accuracy.
  
-Tip: use another array with the names of the months to help ask for data/display data.
+Tip: use the `months` array provided, with the names of the months to help ask for data/display data.
 
 
 ### Question 6 Many Copies of a String
@@ -98,7 +108,7 @@ So, if the user enters 4, and the character "%" your program will display
 
 ### Question 8 Does a String contain all the characters in a set?
 
-Write a program to test if a String contains all of the
+Finish this program to test if a String contains all of the
 punctuation characters from the number keys on a standard US keyboard:
 
 ```
@@ -111,7 +121,10 @@ The String `a)(b*&c^%d$#e@!` contains all the characters.
 The String `abc$*^def` does not contain all of the characters.
 The String `cat` does not contain all of the characters.
 
-Write a program to test if an example String contains all of these characters or not.
+
+In your program, finish the method that tests if a String contains all the characters in another String. Make sure this method would work with any two input Strings.
+ 
+ 
 Your code should NOT use 10 if statements!
 
 
@@ -132,6 +145,7 @@ When the phone starts, each app syncs and downloads, and then repeats to their o
 With all 3 apps running continuously, how long, in hours, will it be before the phone runs out of space?
 
 Assume the phone is running continuously and nothing else is using space on the phone.
+
 Assume that 1KB = 1000 bytes and 1MB = 1000,000 bytes.
 
 Hint 1: the modulo operator is helpful. An expression like  `( number % 4 == 0 )` is true if number divides evenly by 4.

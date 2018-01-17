@@ -20,6 +20,8 @@ import static input.InputUtils.stringInput;
  %%%%
  %%%%
 
+ The getSquareSize method has been written for you.
+ 
  */
 
 
@@ -36,7 +38,7 @@ public class Question_7_Square_Of_Characters {
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
         int size = squarer.getSquareSize();
         String character = squarer.getCharacter();
-        printSquare(size, character);
+        squarer.printSquare(size, character);
 
     }
 
@@ -51,7 +53,7 @@ public class Question_7_Square_Of_Characters {
 
         // Loop while user-entered size is less than the minimum, or larger than the maximum
         while (size < MIN_SIZE || size > MAX_SIZE) {
-            size = positiveIntInput("Enter a number between 1 and 100 for the square size");
+            size = intInput("Enter a number between 1 and 100 for the square size");
         }
 
         return size;
@@ -69,7 +71,7 @@ public class Question_7_Square_Of_Characters {
 
 
 
-    public static void printSquare(int size, String character) {
+    public void printSquare(int size, String character) {
 
         // TODO print a square of characters, of the given size.
         

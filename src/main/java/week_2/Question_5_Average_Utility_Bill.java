@@ -18,7 +18,7 @@ import static input.InputUtils.doubleInput;
  *
  * Also, display the user's data in a table of months and bill amount, so they can review it for accuracy.
  *
- * Tip: use another array with the names of the months to help ask for data/display data.
+ * Tip: use the months array provided, with the names of the months, to help ask for data/display data.
 
  */
 
@@ -56,6 +56,7 @@ public class Question_5_Average_Utility_Bill {
         // Create a new double array.
         // Store values the user enters in this array.
         // Return this array.
+        // Use doubleInput() to ask the user for each bill amount.
 
         return null;  // replace with your code
 
@@ -65,6 +66,7 @@ public class Question_5_Average_Utility_Bill {
     public double averageBillAmount(double[] bills) {
 
         // TODO Calculate the average value of all the bills, and return this number.
+        // TODO make sure this method works with any length array.
         return 0;  // replace with your code
     }
 

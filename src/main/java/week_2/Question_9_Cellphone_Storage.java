@@ -39,13 +39,11 @@ public class Question_9_Cellphone_Storage {
 
         // TODO Calculate and return the number of hours until the phone runs out of space
         // Make sure all the apps sync and download at hour = 0
-        // Use the method arguments.
+        // Use the method arguments. For example, when calculating space used by App A, use the appAHourlyDownload argument.
 
-        int hours = 0;
-    
-        // TODO write your code here
+      
         
-        return hours;  // TODO replace with your own calculated value
+        return 0;  // TODO replace with your own calculated value
 
     }
     
