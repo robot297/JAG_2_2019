@@ -11,32 +11,32 @@ public class Question_3_DebuggerTest extends TestCase {
         q11 = new Question_3_Debugger();
     }
     
-    @Test
+     @Test(timeout=3000)
     public void testCanAddAndRemoveBreakPoint() throws Exception {
         assertTrue(q11.canAddAndRemoveBreakPoint());
     }
 
-    @Test
+     @Test(timeout=3000)
     public void testCanStartDebugger() throws Exception {
         assertTrue(q11.canStartDebugger());
     }
 
-    @Test
+     @Test(timeout=3000)
     public void testCanAddManyBreakpoints() throws Exception {
         assertTrue(q11.canAddManyBreakpoints());
     }
 
-    @Test
+     @Test(timeout=3000)
     public void testCanStepThroughCode() throws Exception {
         assertTrue(q11.canStepThroughCode());
     }
 
-    @Test
+     @Test(timeout=3000)
     public void testCanSeeValueOfVariables() throws Exception {
         assertTrue(q11.canSeeValueOfVariables());
     }
 
-    @Test
+     @Test(timeout=3000)
     public void testCanSeeValuesOfVariablesInStructures() throws Exception {
         assertTrue(q11.canSeeValuesOfVariablesInStructures());
     }
