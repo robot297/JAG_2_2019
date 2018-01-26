@@ -18,7 +18,6 @@ import static org.powermock.api.easymock.PowerMock.*;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({InputUtils.class, Question_2_Add_5_Numbers.class})
-
 public class Question_2_Add_5_NumbersTest extends TestCase {
     
     @Test(timeout=3000)

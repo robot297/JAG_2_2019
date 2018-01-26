@@ -1,9 +1,10 @@
 package week_2;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
-public class Question_3_DebuggerTest extends TestCase {
+import static org.junit.Assert.assertTrue;
+
+public class Question_3_DebuggerTest {
 
     Question_3_Debugger q11;
 

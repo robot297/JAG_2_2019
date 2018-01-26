@@ -53,7 +53,7 @@ public class Question_7_Square_Of_Characters {
 
         // Loop while user-entered size is less than the minimum, or larger than the maximum
         while (size < MIN_SIZE || size > MAX_SIZE) {
-            size = intInput("Enter a number between 1 and 100 for the square size");
+            size = positiveIntInput("Enter a number between 1 and 100 for the square size");
         }
 
         return size;

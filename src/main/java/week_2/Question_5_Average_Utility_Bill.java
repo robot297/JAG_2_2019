@@ -56,7 +56,7 @@ public class Question_5_Average_Utility_Bill {
         // Create a new double array.
         // Store values the user enters in this array.
         // Return this array.
-        // Use doubleInput() to ask the user for each bill amount.
+        // Use doubleInput() to ask the user for each bill amount. A bill may be negative if the user received a credit.
 
         return null;  // replace with your code
 

@@ -75,29 +75,35 @@ public class Question_7_Square_Of_CharactersTest {
     }
     
     @Test(timeout=3000)
-    public void testGetSquareSize() {
-
+    public void testGetSquareSizeInvalid() {
+    
         mockStatic(InputUtils.class);
-        expect(InputUtils.intInput(anyString()))
+        expect(InputUtils.positiveIntInput(anyString()))
                 .andReturn(-1)      // Negative not valid
                 .andReturn(0)       // 0 not valid
                 .andReturn(101)     // too large
                 .andReturn(4);      // 4 is good
+    
+        
         replay(InputUtils.class);
-
+    
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
-
+    
         assertEquals("getSquareSize should not accept 0 or negative numbers", 4, squarer.getSquareSize());
-
-
-
+    
+    }
+    
+    
+    @Test(timeout=3000)
+    public void testGetSquareSizeValid() {
+        
         // Valid input
-        reset(InputUtils.class);
-        expect(InputUtils.intInput(anyString()))
+        mockStatic(InputUtils.class);
+        expect(InputUtils.positiveIntInput(anyString()))
                 .andReturn(5);
         replay(InputUtils.class);
-
-
+    
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
         assertEquals("getSquareSize should accept 5 as valid input", 5, squarer.getSquareSize());
 
 
