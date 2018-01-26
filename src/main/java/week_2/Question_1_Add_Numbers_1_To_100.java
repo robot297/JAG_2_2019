@@ -18,7 +18,6 @@ package week_2;
  
  `addNumbers(100, 1)`
  
- 
  If the method is called with the same `from` and `to` values, return the
  `from` value. So the following method call should return 100.
  
@@ -47,7 +46,7 @@ public class Question_1_Add_Numbers_1_To_100 {
         // For example, if from = 5 and to = 7, your code should calculate 5 + 6 + 7 = 18
         
         // If the from number is larger than the to value, return the from value.
-        // For example, if from = 7 and to = 5, return 5
+        // For example, if from = 7 and to = 5, return 7.
         
         // If the from and to numbers are the same, then return the from number.
         // For example, if from = 8 and to = 8, return 8
