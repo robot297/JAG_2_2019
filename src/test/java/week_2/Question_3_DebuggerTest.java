@@ -1,5 +1,6 @@
 package week_2;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -8,6 +9,7 @@ public class Question_3_DebuggerTest {
 
     Question_3_Debugger q11;
 
+    @Before
     public void setUp() {
         q11 = new Question_3_Debugger();
     }
