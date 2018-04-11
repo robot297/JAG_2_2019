@@ -48,31 +48,53 @@ public class Question_7_Square_Of_CharactersTest {
     
     
     @Test(timeout=3000)
-    public void testGetCharacter() {
+    public void testGetCharacterInvalid() {
 
         mockStatic(InputUtils.class);
         expect(InputUtils.stringInput(anyString()))
                 .andReturn("")        // Enter something that's too short
                 .andReturn("123456")  // Enter something that's too long
+                .andReturn("ab")  // Enter something that's too long
                 .andReturn("Q");      // Exactly 1 character
         replay(InputUtils.class);
 
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         assertEquals("getCharacter should only accept Strings of exactly one character. Do not accept empty Strings as input.", "Q", squarer.getCharacter());
-
-        // Valid input
+        
+    }
+    
+    
+    @Test(timeout=3000)
+    public void testGetCharacterValid() {
+        
+        mockStatic(InputUtils.class);
+        
         reset(InputUtils.class);
         expect(InputUtils.stringInput(anyString()))
-                .andReturn("Q");      // Exactly 1 character
+                .andReturn("^");      // Exactly 1 character
         replay(InputUtils.class);
-
+    
+        Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
+    
+        assertEquals("getCharacter should accept Strings of exactly one character e.g. '^' ", "^", squarer.getCharacter());
+    
+    
+    
+        mockStatic(InputUtils.class);
+    
+        reset(InputUtils.class);
+        expect(InputUtils.stringInput(anyString()))
+                .andReturn("2");      // Exactly 1 character
+        replay(InputUtils.class);
+    
         squarer = new Question_7_Square_Of_Characters();
-
-        assertEquals("getCharacter should only accept Strings of exactly one character.  Do not accept empty Strings as input.", "Q", squarer.getCharacter());
-
-
+    
+        assertEquals("getCharacter should accept Strings of exactly one character e.g. '2'.", "2", squarer.getCharacter());
+    
+    
     }
+    
     
     @Test(timeout=3000)
     public void testGetSquareSizeInvalid() {
