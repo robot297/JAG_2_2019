@@ -46,16 +46,14 @@ public class Question_4_Random_Number_Guessing_Game {
             // ask user for their guess
             int guess = getGuess();
             
+            // Check if the guess is correct
             String result = checkGuess(secret, guess);
-
+            // Print the result (correct, too high, too low) for the user
+            System.out.println(result);
             
-            // TODO print the result - too high, too low, or correct.
+            // TODO Write an if-statement comparing the global CORRECT variable to result
+            // to test if result is correct. If so, end the loop with a break statement
             
-            
-            // TODO Check if result is correct. If so, end the loop.
-            // Use the global CORRECT variable in your if statement
-            break;  // TODO remove and replace with your check
-
         }
         
     }

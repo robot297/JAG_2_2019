@@ -28,16 +28,12 @@ public class Question_2_Add_5_Numbers {
 
 
     public double getNumbersAndCalculateTotal() {
-
-        // TODO Ask user for 5 numbers, one by one
-        double total = 0;  // TODO Keep the total variable. Replace 0 with your result.
         
-        // Calculate total and save in the total variables. Use the doubleInput method.
-        // Write your code here...
-
-    
-        // Don't modify this line
-        return total;
+        // TODO Ask user for 5 numbers, one by one
+        // Use the doubleInput method.
+        // Add up all numbers as the user enters them
+        
+        return 0;   // TODO Replace with your code
     }
 
 }
