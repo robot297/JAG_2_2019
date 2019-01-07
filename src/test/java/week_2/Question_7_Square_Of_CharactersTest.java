@@ -22,26 +22,20 @@ public class Question_7_Square_Of_CharactersTest {
     
     
     @Test(timeout=3000)
-    public void testPrintSquare() throws Exception {
+    public void testPrintSquare() {
 
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
 
         int size = 3;
         String ch = "*";
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-
-        squarer.buildSquare(size, ch);
+        
+        String square = squarer.buildSquare(size, ch);
 
         String expectedOut = "***\n***\n***";
         // Assert that  "%%%%\n%%%%\n%%%%\n%%%%" is printed
 
-        String actualOut = out.toString().replace("\r", "");
-
-        System.out.println(expectedOut);
-        System.out.println(actualOut);
-
+        String actualOut = square.replace("\r", "");
+        
         assertTrue("Your program printed \n " + actualOut + " which doesn't seem to be a square(?)",  actualOut.contains(expectedOut));
 
     }
