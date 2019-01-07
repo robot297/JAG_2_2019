@@ -21,29 +21,23 @@ public class Question_2_Add_5_Numbers {
         // You don't need to modify the main method.
     
         Question_2_Add_5_Numbers q2 = new Question_2_Add_5_Numbers();
-        double[] results = q2.getNumbersAndAnalyze();
-        System.out.println("The total is " + results[0]);
-        System.out.println("The average is " + results[1]);
+        double results = q2.getNumbersAndCalculateTotal();
+        System.out.println("The total is " + results);
 
     }
 
 
-    public double[] getNumbersAndAnalyze() {
+    public double getNumbersAndCalculateTotal() {
 
         // TODO Ask user for 5 numbers, one by one
-    
         double total = 0;  // TODO Keep the total variable. Replace 0 with your result.
-        double average = 0;  // TODO Keep the average variable. Replace 0 with your result.
-
-        // Calculate total and average and save in the total and average variables.
+        
+        // Calculate total and save in the total variables. Use the doubleInput method.
         // Write your code here...
 
-
-        
-        
     
         // Don't modify this line
-        return new double[]{ total, average };
+        return total;
     }
 
 }

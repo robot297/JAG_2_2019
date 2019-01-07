@@ -45,7 +45,6 @@ public class Question_3_Debugger {
 
 
     public boolean canAddAndRemoveBreakPoint() {
-
         // TODO how do you add a breakpoint?
         // TODO how do you remove a breakpoint?
 
@@ -55,7 +54,6 @@ public class Question_3_Debugger {
 
 
     public boolean canStartDebugger() {
-
         // TODO How do you start the debugger?
 
         return false;
@@ -63,28 +61,27 @@ public class Question_3_Debugger {
 
 
     public boolean canAddManyBreakpoints() {
-
-        // TODO     Can you add more than one breakpoint?
+        // TODO Can you add more than one breakpoint?
 
         return false;
     }
 
 
     public boolean canStepThroughCode() {
-        // TODO     How do you move through your code one line at a time?
+        // TODO How do you move through your code one line at a time?
 
         return false;
     }
 
     public boolean canSeeValueOfVariables() {
-        // TODO     How do you see the value of a variable?
+        // TODO How do you see the value of a variable?
 
         return false;
     }
 
     public boolean canSeeValuesOfVariablesInStructures() {
 
-        // TODO   What does clicking on the triangle next to a variable on the variables pane do?
+        // TODO What does clicking on the triangle next to a variable on the variables pane do?
 
         return false;
     }

@@ -26,33 +26,34 @@ import static input.InputUtils.stringInput;
 
 
 public class Question_7_Square_Of_Characters {
-
-    // You don't need to modify these variables
-    static int MIN_SIZE = 1;
-    static int MAX_SIZE = 100;
-
+    
     public static void main(String[] args) {
     
         // You don't need to modify the main method.
         
+        final int MIN_SIZE = 1;
+        final int MAX_SIZE = 100;
+    
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
-        int size = squarer.getSquareSize();
+        int size = squarer.getSquareSize(MIN_SIZE, MAX_SIZE);
         String character = squarer.getCharacter();
-        squarer.printSquare(size, character);
+        String square = squarer.buildSquare(size, character);
+        System.out.println(square);
 
     }
 
     /* Get a positive number for the square size. You don't need to modify this method. */
-    public int getSquareSize() {
+    public int getSquareSize(int min, int max) {
     
         // You don't need to modify this method.
     
-        // Input validation. The square size must be positive.
+        // Input validation. The square size must be positive, and between MIN_SIZE and MAX_SIZE
 
         int size = -1;
 
         // Loop while user-entered size is less than the minimum, or larger than the maximum
-        while (size < MIN_SIZE || size > MAX_SIZE) {
+        while (size < min || size > max) {
+            System.out.println("SIZE" + size);
             size = positiveIntInput("Enter a number between 1 and 100 for the square size");
         }
 
@@ -71,9 +72,12 @@ public class Question_7_Square_Of_Characters {
 
 
 
-    public void printSquare(int size, String character) {
+    public String buildSquare(int size, String character) {
 
-        // TODO print a square of characters, of the given size.
+        // TODO create and return a String that's a square of characters, of the given size.
+        // Example: A 3x3 square of $ is the String "$$$\n$$$\n$$$"
         
+        // TODO replace with your code
+        return null;
     }
 }

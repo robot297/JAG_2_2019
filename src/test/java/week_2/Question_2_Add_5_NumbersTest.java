@@ -26,7 +26,7 @@ public class Question_2_Add_5_NumbersTest extends TestCase {
         // 5 example numbers.
         // For this data, the total is 71.5, and the average is 14.3
         double[] exampleInput = { 6.5, 10, 40, 3, 12 };
-        double[] expectedResult = { 71.5, 14.3 };
+        double expectedResult = 71.5;
         double delta = 0;  // how close do doubles have to be to be considered the same?
 
         // Mock the InputUtils class to provide our pre-defined numbers
@@ -41,12 +41,12 @@ public class Question_2_Add_5_NumbersTest extends TestCase {
 
         // Call our method
         Question_2_Add_5_Numbers q2 = new Question_2_Add_5_Numbers();
-        double[] result = q2.getNumbersAndAnalyze();
+        double result = q2.getNumbersAndCalculateTotal();
 
         // Assert that it returns the expected value
-        assertArrayEquals("With the numbers " + Arrays.toString(exampleInput) +
-                " the total and average should be " + Arrays.toString(expectedResult) +
-                "\nYour code returned " + Arrays.toString(result), result, expectedResult, delta);
+        assertEquals("With the numbers " + Arrays.toString(exampleInput) +
+                " the total and average should be " + expectedResult +
+                "\nYour code returned " + result, result, expectedResult, delta);
 
 
     }

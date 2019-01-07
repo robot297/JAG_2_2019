@@ -33,29 +33,18 @@ public class Question_4_Random_Number_Guessing_Game {
     String HIGH = "Too high";
 
     public static void main(String[] args) {
-
-        int guessesNeeded = new Question_4_Random_Number_Guessing_Game().play();
-
-        // printf is a shortcut for System.out.println(String.format("You guessed the number in %d guesses\n", guessesNeeded));
-        
-        System.out.printf("You guessed the number in %d guesses\n", guessesNeeded);
-
+        new Question_4_Random_Number_Guessing_Game().play();
     }
+    
 
-    public int play() {
+    public void play() {
 
-        int secret = generateSecretNumber(1, 10);
-
-        int guessesNeeded = 0;
+        int secret = generateSecretNumber(10);
 
         while (true) {
 
-            // TODO ask user for their guess
-            int guess = 0;   // Replace with your code
-
-            
-            // TODO increase guessesNeeded
-
+            // ask user for their guess
+            int guess = getGuess();
             
             String result = checkGuess(secret, guess);
 
@@ -68,9 +57,15 @@ public class Question_4_Random_Number_Guessing_Game {
             break;  // TODO remove and replace with your check
 
         }
-
-        return guessesNeeded;
+        
+    }
     
+    public int getGuess() {
+        
+        // TODO use intInput to print a message like "Enter your guess?" and get the user's guess.
+        // TODO modify the following line to return the number the user entered.
+        return 0;
+        
     }
 
     public String checkGuess(int secret, int guess) {
@@ -83,12 +78,12 @@ public class Question_4_Random_Number_Guessing_Game {
         
     }
 
-    public int generateSecretNumber(int min, int max) {
+    public int generateSecretNumber(int max) {
         
-        // TODO generate a random number between min and max, inclusive of min and max
-        // The smallest value possible should be min
-        // The largest value possible should be max
-        // Example: if min = 4 and max = 7, the random number should be a random selected value from 4, 5, 6, 7.
+        // TODO generate a random number between 1 and max-1
+        // The smallest value possible should be 0
+        // The largest value possible should be max - 1
+        // Example: if max = 4, the random number should be a random selected value from 0, 1, 2, 3
         // Use the global Random rnd variable (declared at the top of the program) to generate the number. Don't create another Random.
         
         return 0;  //replace with your code

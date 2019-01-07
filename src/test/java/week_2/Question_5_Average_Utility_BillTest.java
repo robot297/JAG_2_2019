@@ -1,51 +1,57 @@
 package week_2;
 
-
-import input.InputUtils;
-import org.junit.runner.RunWith;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
-
-
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.util.regex.Pattern;
 
-import static org.easymock.EasyMock.anyString;
-import static org.easymock.EasyMock.expect;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.powermock.api.easymock.PowerMock.mockStatic;
-import static org.powermock.api.easymock.PowerMock.replay;
 
 
-@RunWith(PowerMockRunner.class)
-@PrepareForTest(InputUtils.class)
 public class Question_5_Average_Utility_BillTest {
 
     double delta = 0.00001;
     
+    private InputStream stdIn;
+    
+    @Before
+    public void mockSystemIn() {
+        stdIn = System.in;
+    }
+    
+    @After
+    public void resetSystemIn() {
+        System.setIn(stdIn);
+    }
     
     @Test(timeout=3000)
     public void testGetYearBills() throws Exception {
 
         double[] exampleBills = {3.0, 4.0, 5.0, 6.0, 1.0, 2.0, 3.0, 6.0, 7.0, 3.0, 6.0, 7.0};
+        String input = "";
+        for (double bill : exampleBills) {
+            input += bill;
+            input += "\n";
+        }
+        
+//        String[] billString = (String[])Arrays.stream(exampleBills).map(b -> b.toString()).collect(Collectors.toList()).toArray();
+       // String billAmounts = String.join("\n", billString);
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
-
-        mockStatic(InputUtils.class);
-
-        for (double returnVal : exampleBills) {
-            expect(InputUtils.doubleInput(anyString())).andReturn(returnVal);   // "Record" expected behavior
-        }
-
-        replay(InputUtils.class);   // "Play" or "activate" the expected behavior.
-
+        
         double[] bills = q5.getYearBills();
 
         assertArrayEquals("Make you ask the user for 12 bill amounts, and save each value in a 12-element array. Return this array.", exampleBills, bills, delta);

@@ -14,9 +14,11 @@ package week_2;
  Make sure you use the method's parameters.
  
  If the method is called with a smaller `to` value than the `from` value,
- return the `from` value. For example, the following method call should return 100.
+ return the `from` value. For example,
+ the following method call should return 100
  
  addNumbers(100, 1)
+ 
  
  If the method is called with the same `from` and `to` values, return the
  `from` value. So the following method call should return 100.

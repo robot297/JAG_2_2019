@@ -32,7 +32,7 @@ public class Question_7_Square_Of_CharactersTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
-        squarer.printSquare(size, ch);
+        squarer.buildSquare(size, ch);
 
         String expectedOut = "***\n***\n***";
         // Assert that  "%%%%\n%%%%\n%%%%\n%%%%" is printed
@@ -111,7 +111,8 @@ public class Question_7_Square_Of_CharactersTest {
     
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
     
-        assertEquals("getSquareSize should not accept 0 or negative numbers", 4, squarer.getSquareSize());
+        assertEquals("getSquareSize should not accept negative numbers, or numbers smaller than min or larger than max",
+                4, squarer.getSquareSize(1, 100));
     
     }
     
@@ -126,7 +127,7 @@ public class Question_7_Square_Of_CharactersTest {
         replay(InputUtils.class);
     
         Question_7_Square_Of_Characters squarer = new Question_7_Square_Of_Characters();
-        assertEquals("getSquareSize should accept 5 as valid input", 5, squarer.getSquareSize());
+        assertEquals("getSquareSize should accept 5 as valid input", 5, squarer.getSquareSize(1, 100));
 
 
     }
