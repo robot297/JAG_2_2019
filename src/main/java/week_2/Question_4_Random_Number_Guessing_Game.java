@@ -6,7 +6,7 @@ import static input.InputUtils.*;
 
 /**
  *
- Your program should generate a random number between 1 and 10,
+ Your program should generate a random number between 0 and 9,
  and challenge the user to guess the number.
 
  Write a loop that asks the user to guess a number that the computer
@@ -70,7 +70,7 @@ public class Question_4_Random_Number_Guessing_Game {
         
         // TODO Return CORRECT if secret is the same as guess - use the global CORRECT variable
         // TODO Return LOW if guess is too low - use the global LOW variable
-        // TODO return HIGH if guess is too high- use the global HIGH variable
+        // TODO return HIGH if guess is too high - use the global HIGH variable
         
         return null;   //replace with your code
         
@@ -78,7 +78,7 @@ public class Question_4_Random_Number_Guessing_Game {
 
     public int generateSecretNumber(int max) {
         
-        // TODO generate a random number between 1 and max-1
+        // TODO generate a random number between 0 and max-1
         // The smallest value possible should be 0
         // The largest value possible should be max - 1
         // Example: if max = 4, the random number should be a random selected value from 0, 1, 2, 3
