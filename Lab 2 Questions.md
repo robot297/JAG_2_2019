@@ -29,7 +29,7 @@ Write a loop that asks the user to enter 5 numbers. The user should enter the nu
 
 Use the `doubleInput("enter a number")` method.
 
-Once the user has entered all the numbers, calculate the total and the average value.
+Once the user has entered all the numbers, calculate the total of all the numbers.
 
 
 ### Question 3 Debugger practice

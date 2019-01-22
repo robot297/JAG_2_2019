@@ -10,7 +10,7 @@ import static input.InputUtils.doubleInput;
     Use the doubleInput("enter a number") method.
  
     Once the user has entered all the numbers,
-    calculate the total and the average value.
+    calculate the total of all the numbers.
 */
 
 
