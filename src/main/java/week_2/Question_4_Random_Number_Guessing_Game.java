@@ -17,9 +17,6 @@ import static input.InputUtils.*;
 
  The user should be able to have as many guesses as they need.
 
- Once the user guesses correctly, tell the user how many guesses they needed to
- get the right number.
- 
  Read the instructions in the TODO messages.
 
  */
