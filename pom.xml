@@ -70,8 +70,15 @@
             <scope>test</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>com.github.stefanbirkner</groupId>
+            <artifactId>system-rules</artifactId>
+            <version>1.19.0</version>
+        </dependency>
+
         <!-- EasyMock is a mocking framework. PowerMock is an extension that works with EasyMock.
-        Used for creating pretend objects that we can pre-configure their behavior and return values, useful in testing to avoid having to completely set up a program -->
+        Used for creating pretend objects that we can pre-configure their behavior and return values, useful in testing to avoid having to completely set up a program &ndash;&gt;-->
         <dependency>
             <groupId>org.easymock</groupId>
             <artifactId>easymock</artifactId>

@@ -23,7 +23,7 @@ import static input.InputUtils.doubleInput;
  */
 
 
-public class Question_5_Average_Utility_Bill {
+public class Question_8_Average_Utility_Bill {
 
     String[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
@@ -31,7 +31,7 @@ public class Question_5_Average_Utility_Bill {
 
         // You don't need to modify this method.
         
-        Question_5_Average_Utility_Bill billsAverage = new Question_5_Average_Utility_Bill();
+        Question_8_Average_Utility_Bill billsAverage = new Question_8_Average_Utility_Bill();
         billsAverage.billAverages();
 
     }
@@ -74,6 +74,7 @@ public class Question_5_Average_Utility_Bill {
     public void printBillTable(double[] bills) {
 
         // TODO display the month name, and bill amounts, in table form.
+        // TODO make sure this method works with any length array.
         // Use the months array to display the names.
 
 

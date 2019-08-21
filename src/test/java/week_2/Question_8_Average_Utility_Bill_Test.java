@@ -7,10 +7,8 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
-import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.regex.Pattern;
@@ -26,7 +24,7 @@ import static org.powermock.api.easymock.PowerMock.replay;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-public class Question_5_Average_Utility_BillTest {
+public class Question_8_Average_Utility_Bill_Test {
 
     double delta = 0.00001;
     
@@ -36,7 +34,7 @@ public class Question_5_Average_Utility_BillTest {
 
         double[] exampleBills = {3.0, 4.0, 5.0, 6.0, 1.0, 2.0, 3.0, 6.0, 7.0, 3.0, 6.0, 7.0};
 
-        Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
+        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
 
         mockStatic(InputUtils.class);
 
@@ -56,7 +54,7 @@ public class Question_5_Average_Utility_BillTest {
     @Test(timeout=3000)
     public void testAverageBillAmount() throws Exception {
 
-        Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
+        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
 
         double[] exampleBills = {4.1, 5.1, 6.1};
         double sum = 4.1 + 5.1 + 6.1;
@@ -74,7 +72,7 @@ public class Question_5_Average_Utility_BillTest {
 
         double[] exampleBills = { 2 , 3 , 4 };
 
-        Question_5_Average_Utility_Bill q5 = new Question_5_Average_Utility_Bill();
+        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
 
         q5.months = new String[]{ "jan", "feb", "mar" } ;
 
