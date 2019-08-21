@@ -54,6 +54,19 @@ If the method is given the String "Hello" and n = -1 copies, or any negative num
 
 ### Question 6 filter array
 
+Write a program that prints only the program file names from an array.
+
+For this question, a program file is any file that ends with .py or .java or .cs
+
+For example, if a filenames array = `{ "lab1.py", "assignment.docx", "music.mp3", "Website.cs", "Calculator.java" }`
+Then the program should print
+
+```
+lab1.py
+Website.cs
+Calculator.java
+```
+
 
 ### Question 7 remove bad data from an array
 
