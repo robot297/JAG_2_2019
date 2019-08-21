@@ -25,17 +25,18 @@ public class Question_3_While_Input_Validation {
         /*
         * Complete this method.
         *
-        * Use the intInput method to ask the user for a class code.
+        * Use the intInput method to print a message asking the user for a class code. (don't use positiveIntInput.)
         *
         * A valid class code is a number between 1000 and 2999.
         *
         * In case the user makes a mistake and enters a number lower than 1000 or more than 2999,
-        * write a validation while loop. This loop should
+        * write a validation while loop. This loop should repeat while the data entered is invalid.
+        *
         * */
         
         // TODO delete this line and replace this with your code.
         return 0;
-     
+        
     }
 
 }
