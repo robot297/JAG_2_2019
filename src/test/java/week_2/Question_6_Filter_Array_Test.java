@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 
 import static org.junit.Assert.*;
-import static week_2.Question_6_Filter_Array.printProgramFiles;
+import static week_2.Question_5_Filter_Array.printProgramFiles;
 
 
 public class Question_6_Filter_Array_Test {

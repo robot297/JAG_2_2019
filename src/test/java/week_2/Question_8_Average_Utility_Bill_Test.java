@@ -34,7 +34,7 @@ public class Question_8_Average_Utility_Bill_Test {
 
         double[] exampleBills = {3.0, 4.0, 5.0, 6.0, 1.0, 2.0, 3.0, 6.0, 7.0, 3.0, 6.0, 7.0};
 
-        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
+        Question_7_Average_Utility_Bill q5 = new Question_7_Average_Utility_Bill();
 
         mockStatic(InputUtils.class);
 
@@ -54,7 +54,7 @@ public class Question_8_Average_Utility_Bill_Test {
     @Test(timeout=3000)
     public void testAverageBillAmount() throws Exception {
 
-        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
+        Question_7_Average_Utility_Bill q5 = new Question_7_Average_Utility_Bill();
 
         double[] exampleBills = {4.1, 5.1, 6.1};
         double sum = 4.1 + 5.1 + 6.1;
@@ -72,7 +72,7 @@ public class Question_8_Average_Utility_Bill_Test {
 
         double[] exampleBills = { 2 , 3 , 4 };
 
-        Question_8_Average_Utility_Bill q5 = new Question_8_Average_Utility_Bill();
+        Question_7_Average_Utility_Bill q5 = new Question_7_Average_Utility_Bill();
 
         q5.months = new String[]{ "jan", "feb", "mar" } ;
 

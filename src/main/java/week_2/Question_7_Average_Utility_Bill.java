@@ -23,7 +23,7 @@ import static input.InputUtils.doubleInput;
  */
 
 
-public class Question_8_Average_Utility_Bill {
+public class Question_7_Average_Utility_Bill {
 
     String[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
@@ -31,7 +31,7 @@ public class Question_8_Average_Utility_Bill {
 
         // You don't need to modify this method.
         
-        Question_8_Average_Utility_Bill billsAverage = new Question_8_Average_Utility_Bill();
+        Question_7_Average_Utility_Bill billsAverage = new Question_7_Average_Utility_Bill();
         billsAverage.billAverages();
 
     }

@@ -32,9 +32,16 @@ For example, if the user has a check of $30, the program will print
 
 Your program's output should look exactly as shown above.
 
+
 ### Question 3 while loop input validation
 
+Write a program that asks for a college class code.
+The codes have to be between 1000 and 2999.
 
+Your program should validate that the class code entered is between 1000 and 2999.
+If it is not, then ask for the code again. Repeat until the user enters a valid class code.
+
+ 
 ### Question 4 many copies of a String
 
 Finish the multiplyString method to create a String from many copies of itself.
@@ -48,11 +55,7 @@ If the method is given the String "Hello" and n = 0 copies, it will return "". (
 If the method is given the String "Hello" and n = -1 copies, or any negative number it will return "". (An empty String)
  
 
-### Question 5 Nested Null Loop   (TODO)
-
-
-
-### Question 6 filter array
+### Question 5 filter array
 
 Write a program that prints only the program file names from an array.
 
@@ -68,10 +71,27 @@ Calculator.java
 ```
 
 
-### Question 7 remove bad data from an array
+### Question 6 remove bad data from an array
 
 
-### Question 8, average utility bills
+ When collecting data, it's common to have bad data mixed in with the actual data.
+ 
+ For this program, imagine that you are monitoring your internet speed once an hour.
+ Sometimes the connection is lost completely and due to a bug in the monitoring program,
+ the speed is recorded as 2,147,483,647 Mbps, (mega bits per second) which is much too fast to be a valid speed.
+ 
+ 1-20 Mbps is typical for an average budget home cable internet connection. Fiber connections may be 1000Mbs or 1 gigabit.
+ 
+ ( Question - what's special about 2,147,483,647? Why might the monitoring program record this number in particular? )
+ 
+ Part 1: In this program, complete the cleanData method to remove bad data from an array of data.
+ Since 2147483647 means the connection was lost, then 0 bytes were transferred.
+ So, replace each 2147483647 values in the array with 0.
+ 
+ Part 2: Complete the graphData method to draw a basic vertical graph of the data.
+ 
+
+### Question 7, average utility bills
 
 Customers of a heating utility company have much larger bills in the cold winter than in the summer.
 The utility company allows customers to spread the cost of bills through the year by charging them an average payment every month.

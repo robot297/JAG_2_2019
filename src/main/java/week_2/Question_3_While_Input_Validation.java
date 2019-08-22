@@ -7,9 +7,8 @@ import static input.InputUtils.intInput;
  Write a program that asks for a college class code.
  The codes have to be between 1000 and 2999.
  
- Your program should validate that the
- 
- 
+ Your program should validate that the class code entered is between 1000 and 2999.
+ If it is not, then ask for the code again. Repeat until the user enters a valid class code.
  
  */
 public class Question_3_While_Input_Validation {
@@ -23,7 +22,7 @@ public class Question_3_While_Input_Validation {
         
         
         /*
-        * Complete this method.
+        * TODO Complete this method.
         *
         * Use the intInput method to print a message asking the user for a class code. (don't use positiveIntInput.)
         *
