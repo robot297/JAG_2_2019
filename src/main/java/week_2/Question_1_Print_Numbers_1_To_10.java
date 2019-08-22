@@ -4,7 +4,7 @@ package week_2;
  *
  Write a program that prints the numbers 1 to 10.
  
- Your loop should be in the printNumbers method. Use the `from` and `to`
+ Your loop should be in the printNumbers method. Use the method's `from` and `to`
  parameters in your code.
  
  Your method should work for any to and from numbers, not just 1 and 10.

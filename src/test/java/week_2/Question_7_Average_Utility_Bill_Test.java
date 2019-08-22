@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -24,7 +23,7 @@ import static org.powermock.api.easymock.PowerMock.replay;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-public class Question_8_Average_Utility_Bill_Test {
+public class Question_7_Average_Utility_Bill_Test {
 
     double delta = 0.00001;
     

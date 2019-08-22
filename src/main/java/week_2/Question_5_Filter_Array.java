@@ -4,10 +4,10 @@ package week_2;
 
  Write a program that prints only the program file names from an array.
  
-  For this question, a program file is any file that ends with .py or .java or .cs
+ For this question, a program file is any file that ends with .py or .java or .cs
  
-  For example, if a filenames array  = { "lab1.py", "assignment.docx", "music.mp3", "Website.cs", "Calculator.java" }
-  Then the program should print
+ For example, if a filenames array  = { "lab1.py", "assignment.docx", "music.mp3", "Website.cs", "Calculator.java" }
+ Then the program should print
  
  lab1.py
  Website.cs

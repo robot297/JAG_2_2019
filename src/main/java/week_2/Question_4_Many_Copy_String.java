@@ -32,7 +32,8 @@ public class Question_4_Many_Copy_String {
     
     public static String multiplyString(String userString, int repeats) {
         
-        // TODO return a String that is repeats copies of userString.
+        // TODO return a String that is made of multiple copies of userString.
+        // The variable called repeats contains the number of copies.
         // So if userString = "Java" and repeats = 2 this method should return "JavaJava".
         // If userString = "Java" and repeats = 0, or repeats is negative, this method should return ""  (an empty String)
       

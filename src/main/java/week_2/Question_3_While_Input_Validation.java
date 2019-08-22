@@ -5,7 +5,7 @@ import static input.InputUtils.intInput;
 /**
  
  Write a program that asks for a college class code.
- The codes have to be between 1000 and 2999.
+ A code must be a number between 1000 and 2999.
  
  Your program should validate that the class code entered is between 1000 and 2999.
  If it is not, then ask for the code again. Repeat until the user enters a valid class code.
@@ -26,10 +26,11 @@ public class Question_3_While_Input_Validation {
         *
         * Use the intInput method to print a message asking the user for a class code. (don't use positiveIntInput.)
         *
-        * A valid class code is a number between 1000 and 2999.
-        *
+        * A code must be a number between 1000 and 2999.
         * In case the user makes a mistake and enters a number lower than 1000 or more than 2999,
         * write a validation while loop. This loop should repeat while the data entered is invalid.
+        *
+        * When the user enters a valid code, the method will return the code entered.
         *
         * */
         

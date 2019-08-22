@@ -2,18 +2,19 @@ package week_2;
 
 /**
  *
- When collecting data, it's common to have bad data mixed in with the actual data.
+ When collecting data, it's common to get some bad data mixed in with the actual data.
  
  For this program, imagine that you are monitoring your internet speed once an hour.
- Sometimes the connection is lost completely and due to a bug in the monitoring program,
- the speed is recorded as 2,147,483,647 Mbps, (mega bits per second) which is much too fast to be a valid speed.
+ Sometimes the connection is lost completely. Due to a bug in the monitoring program,
+ when the connection is lost, the speed is recorded as 2,147,483,647 Mbps, (mega bits per second)
+ which is much too fast to be a valid speed.
  
  1-20 Mbps is typical for an average budget home cable internet connection. Fiber connections may be 1000Mbs or 1 gigabit.
  
  ( Question - what's special about 2,147,483,647? Why might the monitoring program record this number in particular? )
  
  Part 1: In this program, complete the cleanData method to remove bad data from an array of data.
- Since 2147483647 means the connection was lost, then 0 bytes were transferred.
+ A value of 2147483647 means the connection was lost, then 0 bytes were transferred.
  So, replace each 2147483647 values in the array with 0.
  
  Part 2: Complete the graphData method to draw a basic vertical graph of the data.
@@ -35,7 +36,7 @@ public class Question_6_Clean_And_Graph_Array {
     
     public static void cleanData(int[] speeds) {
     
-        // TODO write this method. Replace any element with value 2147483647 with 0.
+        // TODO write this method. Replace any element in the speeds array with value 2147483647 with 0.
         // Don't modify any other elements in the array.
         
         // If you modify an object within a method, it's the same object that the method is

@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 import static week_2.Question_6_Clean_And_Graph_Array.cleanData;
 
 
-public class Question_7_Clean_And_Graph_Array_Test {
+public class Question_6_Clean_And_Graph_Array_Test {
     
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();

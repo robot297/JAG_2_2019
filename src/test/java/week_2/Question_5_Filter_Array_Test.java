@@ -8,34 +8,33 @@ import static org.junit.Assert.*;
 import static week_2.Question_5_Filter_Array.printProgramFiles;
 
 
-public class Question_6_Filter_Array_Test {
-    
+public class Question_5_Filter_Array_Test {
     
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     
     
-    @Test
+    @Test(timeout = 3000)
     public void printingFilenamesTest() {
         // Check if the filenames are printed at all
-    
+
         systemOutRule.clearLog();
-    
+
         String[] exampleFilenames = { "accounting.xlsx", "ArraysAndStrings.java" , "Code.cs", "Diary.docx"};
         printProgramFiles(exampleFilenames);
-    
+
         String actualOut = systemOutRule.getLog().trim();
-        
+
         assertTrue("If printProgramFiles is called with the array { \"accounting.xlsx\", \"ArraysAndStrings.java\" , \"Code.cs\", \"Diary.docx\" } \n " +
                 "then the output should include \"ArraysAndStrings.java\"",  actualOut.contains("ArraysAndStrings.java"));
-    
+
         assertTrue("If printProgramFiles is called with the array { \"accounting.xlsx\", \"ArraysAndStrings.java\" , \"Code.cs\", \"Diary.docx\" } \n " +
                 "then the output should include \"Code.cs\"",  actualOut.contains("ArraysAndStrings.java"));
-        
+
     }
     
     
-    @Test
+    @Test(timeout = 3000)
     public void filterArrayTest() {
     
         systemOutRule.clearLog();
@@ -52,7 +51,6 @@ public class Question_6_Filter_Array_Test {
         
         systemOutRule.clearLog();
         
-        
         String[] exampleFilenames2 = { "accounting.xlsx", "ArraysAndStrings.java" };
         printProgramFiles(exampleFilenames2);   // This should print ArraysAndStrings.java, one per line
     
@@ -65,15 +63,15 @@ public class Question_6_Filter_Array_Test {
     }
     
     
-    @Test
+    @Test(timeout = 3000)
     public void filterByExtensionsTest() {
     
         systemOutRule.clearLog();
     
-        String[] exampleFilenames2 = { "accountingcs", "happy", "ArraysAndStrings.notjava" };
-        printProgramFiles(exampleFilenames2);   // This should print lab2.py and Arrays.java, one per line
+        String[] exampleFilenames2 = { "accountingcs", "happy", "I_am_code.py", "ArraysAndStrings.notjava" };
+        printProgramFiles(exampleFilenames2);   // This should only print I_am_code.java
     
-        String expectedOut = "";
+        String expectedOut = "I_am_code.java";
         String actualOut = systemOutRule.getLog().trim();
     
         assertEquals("Make sure your printProgramFiles method prints only the program files. " +

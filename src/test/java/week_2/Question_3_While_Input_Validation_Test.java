@@ -16,7 +16,6 @@ import static week_2.Question_3_While_Input_Validation.getCollegeClassCode;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(InputUtils.class)
-
 public class Question_3_While_Input_Validation_Test {
     
     @Test(timeout=3000)
