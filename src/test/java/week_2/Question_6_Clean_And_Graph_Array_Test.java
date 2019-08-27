@@ -7,6 +7,7 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static week_2.Question_6_Clean_And_Graph_Array.cleanData;
+import static week_2.Question_6_Clean_And_Graph_Array.graphData;
 
 
 public class Question_6_Clean_And_Graph_Array_Test {
@@ -31,6 +32,8 @@ public class Question_6_Clean_And_Graph_Array_Test {
         
         int[] exampleData = { 5, 2, 4, 0, 3};
         String expectedGraph = "*****\n**\n****\n\n***";
+        
+        graphData(exampleData);
         
         String graph = systemOutRule.getLog().trim();
         
