@@ -17,7 +17,7 @@ public class Question_1_Print_Numbers_1_To_10_Test {
         systemOutRule.clearLog();
         String expected = buildExpected(1, 10);
         printNumbers(1, 10);
-        String actualPrinted = systemOutRule.getLog().trim();
+        String actualPrinted = systemOutRule.getLog().replace("\r", "").trim();
         assertEquals("Print the numbers 1 through 10, one per line. Make sure you include 10.", expected, actualPrinted);
     }
     
@@ -27,7 +27,7 @@ public class Question_1_Print_Numbers_1_To_10_Test {
         systemOutRule.clearLog();
         String expected = buildExpected(1, 4);
         printNumbers(1, 4);
-        String actualPrinted = systemOutRule.getLog().trim();
+        String actualPrinted = systemOutRule.getLog().replace("\r", "").trim();
         assertEquals("Use the method's from and to arguments to set up your loop. " +
                 "If the method is called with 1 and 4, it should print " +
                         "\n1 \n2 \n3 \n4\n" +
@@ -42,7 +42,7 @@ public class Question_1_Print_Numbers_1_To_10_Test {
         systemOutRule.clearLog();
         String expected = buildExpected(37, 42);
         printNumbers(37, 42);
-        String actualPrinted = systemOutRule.getLog().trim();
+        String actualPrinted = systemOutRule.getLog().replace("\r", "").trim();
         assertEquals("Use the method's from and to arguments to set up your loop. " +
                         "If the method is called with 37 and 42, it should print " +
                         "\n37 \n38 \n39 \n40 \n41 \n42\n." +
