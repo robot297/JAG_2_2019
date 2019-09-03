@@ -71,7 +71,7 @@ public class Question_5_Filter_Array_Test {
         String[] exampleFilenames2 = { "accountingcs", "happy", "I_am_code.py", "ArraysAndStrings.notjava" };
         printProgramFiles(exampleFilenames2);   // This should only print I_am_code.java
     
-        String expectedOut = "I_am_code.java";
+        String expectedOut = "I_am_code.py";
         String actualOut = systemOutRule.getLog().trim();
     
         assertEquals("Make sure your printProgramFiles method prints only the program files. " +
