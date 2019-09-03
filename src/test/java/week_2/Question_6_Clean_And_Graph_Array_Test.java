@@ -35,7 +35,7 @@ public class Question_6_Clean_And_Graph_Array_Test {
         
         graphData(exampleData);
         
-        String graph = systemOutRule.getLog().trim();
+        String graph = systemOutRule.getLog().replace("\r", "").trim();
         
         assertEquals("For each element of the array, print the same number of stars on each line as \n" +
                 "the value in the array. " +
