@@ -64,7 +64,7 @@ public class Question_2_Tip_Amount_Calculator_Test {
         
         systemOutRule.clearLog();
         printTipTable(30);
-        String out = systemOutRule.getLog().trim();
+        String out = systemOutRule.getLog().replace("/r", "").trim();
         
         assertEquals("Make sure you print the table in the exact format specified in the question. \n" +
                         "Click the \"Click to see difference\" link in the test results to compare the \n" +
