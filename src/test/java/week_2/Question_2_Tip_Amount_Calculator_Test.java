@@ -22,7 +22,7 @@ public class Question_2_Tip_Amount_Calculator_Test {
         printTipTable(30);
         String out = systemOutRule.getLog().trim();
         out =  out.replace("\n", " ");
-        out =  out.replace("\r", " ");
+        out =  out.replace("\r", "");
         
         String expectedTableNoFormatting = " 10 3.0 33.0 " +
                 "15 4.5 34.5 " +
