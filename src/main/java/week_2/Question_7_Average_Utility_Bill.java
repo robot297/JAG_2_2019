@@ -55,8 +55,11 @@ public class Question_7_Average_Utility_Bill {
         // Create a new double array.
         // Store values the user enters in this array.
         // Return this array.
-        // Use doubleInput() to ask the user for each bill amount. A bill may be negative if the user received a credit.
-
+        // Use doubleInput(question) to ask the user for each bill amount.
+        //   Why not positiveDoubleInput? A bill may be negative if the user overpaid in the previous month or received a credit.
+        //   Use the form with the String argument, e.g. doubleInput("Enter bill amount");
+        //   The test will fail if you use doubleInput() with no argument.
+        
         return null;  // TODO replace with your code
 
     }
